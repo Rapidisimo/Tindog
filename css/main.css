@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    background-color: rgb(224, 216, 206);
+    font-family: 'Poppins', sans-serif;
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 640px;
+    background-color: white;
+    padding: 1rem;
+    border: 5px solid rgb(161, 161, 161);
+    border-radius: 5px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    font-size: 1.6rem;
+    min-height: 50px;
+}
+
+/* Icons */
+.bkg-icon-util {
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.settings {
+    background-image: url(../images/icon-profile.png);
+    height: 32.5px;
+    width: 34px;
+}
+
+.paw {
+    background-image: url(../images/logo.png);
+    height: 42px;
+    width: 84px;
+
+}
+
+.chat {
+    background-image: url(../images/icon-chat.png);
+    height: 34px;
+    width: 34px;
+}
+
+.profile-icon-util {
+    background-size: 50%;
+    background-position: center;
+    background-color: white;
+    border-radius: 50%;
+    padding: 1.5rem;
+    box-shadow: 2px 4px 10px 3px rgba(0, 0, 0, 0.106);
+}
+
+.no-select {
+    background-image: url(../images/icon-cross.png);
+    height: 36px;
+    width: 36px;
+}
+
+.love-select {
+    background-image: url(../images/icon-heart.png);
+    height: 41px;
+    width: 36px;
+}
+
+.love-select:hover {
+    background-color: #DBFFF4;
+}
+
+.no-select:hover {
+    background-color: #FFE7EF;
+}
+/* Icons - End */
+
+.profile {
+    display: grid;
+    align-content: end;
+    padding: 1rem;
+    background-image: url(../images/dog-teddy.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 751px;
+    border-radius: 5px;
+    color: white;
+}
+
+.profile h1 {
+    line-height: 1.1;
+    font-weight: 600;
+}
+.profile h2 {
+    font-size: 1.2rem;
+    font-weight: 200;
+    letter-spacing: .18rem;
+}
+
+.profile-select {
+    display: flex;
+    justify-content: center;
+    gap: 1.2rem;
+    margin-top: 1rem ;
+}
