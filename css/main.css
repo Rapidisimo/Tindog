@@ -11,7 +11,7 @@ body {
 
 .wrapper {
     margin: 0 auto;
-    max-width: 640px;
+    max-width: 370px;
     background-color: white;
     padding: 1rem;
     border: 5px solid rgb(161, 161, 161);
@@ -87,11 +87,11 @@ header {
 .profile {
     display: grid;
     align-content: end;
-    padding: 1rem;
-    background-image: url(../images/dog-teddy.jpg);
+    padding: 370px 1rem 1rem 1rem;
+    /* background-image: url(../images/dog-teddy.jpg); */
     background-repeat: no-repeat;
     background-size: cover;
-    height: 751px;
+    /* padding-top: 430px; */
     border-radius: 5px;
     color: white;
 }
@@ -111,4 +111,15 @@ header {
     justify-content: center;
     gap: 1.2rem;
     margin-top: 1rem ;
+}
+
+.profile-loved {
+    position: absolute;
+    margin-top: -380px;
+    margin-left: 2rem;
+    padding: 4rem;
+    background-image: url(../images/badge-like.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform: rotate(-30deg);
 }

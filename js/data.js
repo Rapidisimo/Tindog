@@ -1,12 +1,13 @@
-const dogs = [
-    {
+const dogsData = {
+    profile1: {
         name: "Rex",
         avatar: "images/dog-rex.jpg",
         age: 25,
         bio: "Art. Literature. Natural wine. Yoga.",
         hasBeenSwiped: false,
         hasBeenLiked: false
-    },{
+    },
+    profile2: {
         name: "Bella",
         avatar: "images/dog-bella.jpg",
         age: 43,
@@ -14,7 +15,7 @@ const dogs = [
         hasBeenSwiped: false,
         hasBeenLiked: false
     },
-    {
+    profile3: {
         name: "Teddy",
         avatar: "images/dog-teddy.jpg",
         age: 30,
@@ -22,6 +23,9 @@ const dogs = [
         hasBeenSwiped: false,
         hasBeenLiked: false
     }
-]
+}
 
-// Remember to export the data!
+export default dogsData
+
+// Log
+// Changed dogs from an array to an object and added profile(x)
