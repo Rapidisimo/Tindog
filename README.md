@@ -8,4 +8,4 @@
 3. ✅ Use modules (import/export)
 
 ## Preview
-![App-Preview](images/app-preview-sm.jpeg)
+![App-Preview](images/app-preview-sm.jpg)
