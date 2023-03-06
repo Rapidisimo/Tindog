@@ -52,7 +52,7 @@ document.querySelector('.profile-select').addEventListener("click", (e) => {
                     <div class="chat bkg-icon-util"></div>
                 </header>
                 <section>
-                    <h1>No more profile left 😄</h1>
+                    <h1>No more profiles left 😄</h1>
                     <h2>You liked a total of ${likedTotal} profiles 🐶.</h2>
                 </section>
                 `
