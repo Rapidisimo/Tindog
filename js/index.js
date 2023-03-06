@@ -1,6 +1,7 @@
 import dogsData from "./data.js";
 import {Dog, likedTotal} from "./dog.js";
 
+
 // Used to keep track of available profiles
 let profileArray = ["profile1", "profile2", "profile3"]
 // hide/unhide toggle based on parameter
@@ -20,6 +21,22 @@ function getNewProfile() {
     const nextProfile = dogsData[profileArray.shift()];
     return nextProfile ? new Dog(nextProfile) : {}
 }
+// final msg
+function noMoreDogs() {
+    buttonStatus(true);
+    document.querySelector('.wrapper').innerHTML = `
+    <header>
+        <div class="settings bkg-icon-util"></div>
+        <div class="paw bkg-icon-util"></div>
+        <div class="chat bkg-icon-util"></div>
+    </header>
+    <section>
+        <h1>No more profiles left 😄</h1>
+        <h2>You liked a total of ${likedTotal} profiles 🐶.</h2>
+    </section>
+    `;
+    setTimeout( () => {location.reload()}, 3000)
+}
 
 document.querySelector('.profile-select').addEventListener("click", (e) => {
     if(e.target.classList.contains("no-select")) {
@@ -27,10 +44,14 @@ document.querySelector('.profile-select').addEventListener("click", (e) => {
         profileGallery.profileUpdate() /* Add Liked or Disliked Image */
         labelStatus() /* Makes label image visible or hidden */
         setTimeout( () => {
-            labelStatus()
-            profileGallery = getNewProfile()
-            buttonStatus(false)
-            render()    
+            if(profileArray.length > 0) {
+                labelStatus()
+                profileGallery = getNewProfile()
+                buttonStatus(false)
+                render()    
+            } else {
+                noMoreDogs()
+            }
         }, 2000)
     } else if (e.target.classList.contains("love-select")) {
         buttonStatus(true)
@@ -44,18 +65,7 @@ document.querySelector('.profile-select').addEventListener("click", (e) => {
                 buttonStatus(false)
                 render()        
             } else { /* If not it shows the End Screen */
-                buttonStatus(true)
-                document.querySelector('.wrapper').innerHTML = `
-                <header>
-                    <div class="settings bkg-icon-util"></div>
-                    <div class="paw bkg-icon-util"></div>
-                    <div class="chat bkg-icon-util"></div>
-                </header>
-                <section>
-                    <h1>No more profiles left 😄</h1>
-                    <h2>You liked a total of ${likedTotal} profiles 🐶.</h2>
-                </section>
-                `
+                noMoreDogs()
             }
         }, 2000)
     }
