@@ -82,16 +82,26 @@ header {
 .no-select:hover {
     background-color: #FFE7EF;
 }
+
+button {
+    border: 0;
+}
+
 /* Icons - End */
+
+/* Utility */
+.hidden {
+    display: none;
+}
+/* Utility - End */
 
 .profile {
     display: grid;
     align-content: end;
+    height: 510px;
     padding: 370px 1rem 1rem 1rem;
-    /* background-image: url(../images/dog-teddy.jpg); */
     background-repeat: no-repeat;
     background-size: cover;
-    /* padding-top: 430px; */
     border-radius: 5px;
     color: white;
 }
@@ -113,13 +123,20 @@ header {
     margin-top: 1rem ;
 }
 
-.profile-loved {
+.profile-result-util {
     position: absolute;
-    margin-top: -380px;
-    margin-left: 2rem;
+    margin-top: -340px;
+    margin-left: 1.2rem;
     padding: 4rem;
-    background-image: url(../images/badge-like.png);
     background-size: contain;
     background-repeat: no-repeat;
     transform: rotate(-30deg);
+}
+
+.profile-loved {
+    background-image: url(../images/badge-like.png);
+}
+
+.profile-disliked {
+    background-image: url(../images/badge-nope.png);
 }
