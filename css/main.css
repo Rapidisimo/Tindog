@@ -14,7 +14,7 @@ body {
     max-width: 370px;
     background-color: white;
     padding: 1rem;
-    border: 5px solid rgb(161, 161, 161);
+    border: 5px solid hsla(0, 0%, 63%, 0.529);
     border-radius: 5px;
 }
 
@@ -86,7 +86,6 @@ header {
 button {
     border: 0;
 }
-
 /* Icons - End */
 
 /* Utility */
@@ -95,6 +94,7 @@ button {
 }
 /* Utility - End */
 
+/* Main Profile Photo Area */
 .profile {
     display: grid;
     align-content: end;
@@ -115,7 +115,7 @@ button {
     font-weight: 200;
     letter-spacing: .18rem;
 }
-
+/* Like/Dislike Button Area */
 .profile-select {
     display: flex;
     justify-content: center;
@@ -123,6 +123,7 @@ button {
     margin-top: 1rem ;
 }
 
+/* Label Positioning */
 .profile-result-util {
     position: absolute;
     margin-top: -340px;
@@ -132,7 +133,7 @@ button {
     background-repeat: no-repeat;
     transform: rotate(-30deg);
 }
-
+/* Label Images */
 .profile-loved {
     background-image: url(../images/badge-like.png);
 }

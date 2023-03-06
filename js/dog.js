@@ -1,4 +1,4 @@
-let likedTotal = 0;
+let likedTotal = 0; /* Count for Summary End Page */
 
 class Dog {
     constructor(data) {
@@ -11,7 +11,7 @@ class Dog {
         likedTotal += 1;
     }    
 
-    // Profile Update
+    // Profile Update - Shows label based on button choice
     profileUpdate() {
         this.hasBeenSwiped = true;
         if(this.hasBeenLiked) {

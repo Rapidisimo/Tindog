@@ -28,4 +28,4 @@ const dogsData = {
 export default dogsData
 
 // Log
-// Changed dogs from an array to an object and added profile(x)
+// Changed dogs from an array to an object and added profile(numbering)
